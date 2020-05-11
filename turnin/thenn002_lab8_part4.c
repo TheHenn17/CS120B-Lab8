@@ -12,6 +12,8 @@
 #include "simAVRHeader.h"
 #endif
 
+//Demo: https://drive.google.com/open?id=1E_NgGes2qd4v3qVzwBGx5fXAmU32A1TK
+
 void ADC_init() {
 	ADCSRA |= (1 << ADEN) | (1 << ADSC) | (1 << ADATE);
 }
@@ -21,7 +23,7 @@ int main(void) {
 	DDRD = 0xFF; PORTD = 0x00;
 	DDRA = 0x00; PORTA = 0xFF;
 	unsigned short value = 0x00;
-	unsigned short MAX = 128; //change accordingly
+	unsigned short MAX = 288; //change accordingly
 	unsigned char temp;
 	ADC_init();
 	unsigned short partition = MAX/8;
