@@ -21,7 +21,7 @@ int main(void) {
 	DDRD = 0xFF; PORTD = 0x00;
 	DDRA = 0x00; PORTA = 0xFF;
 	unsigned short value = 0x00;
-	unsigned short MAX = 288; //change accordingly
+	unsigned short MAX = 128; //change accordingly
 	unsigned char temp;
 	ADC_init();
 	unsigned short partition = MAX/8;
